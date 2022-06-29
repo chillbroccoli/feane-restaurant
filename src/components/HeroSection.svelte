@@ -1,0 +1,75 @@
+<script>
+  import clsx from "clsx";
+  import { page } from "$app/stores";
+
+  const links = [
+    {
+      url: "/",
+      title: "Home",
+      isActive: $page.url.pathname === "/",
+    },
+    {
+      url: "/menu",
+      title: "Menu",
+      isActive: $page.url.pathname === "/menu",
+    },
+    {
+      url: "/about",
+      title: "About",
+      isActive: $page.url.pathname === "/about",
+    },
+    {
+      url: "/booktable",
+      title: "Booktable",
+      isActive: $page.url.pathname === "/booktable",
+    },
+  ];
+</script>
+
+<div class="w-full h-screen bg-hero">
+  <div class="w-4/5 2xl:w-3/5 h-full mx-auto flex flex-col">
+    <header class="flex justify-between items-center py-8">
+      <h1 class="text-4xl font-brand text-white">Feane</h1>
+
+      <nav>
+        <ul class="flex items-center">
+          {#each links as link}
+            <li
+              class={clsx(
+                "px-3 uppercase hover:text-yellow-400",
+                link.isActive ? "text-yellow-400" : "text-white"
+              )}
+            >
+              <a href={link.url}>{link.title}</a>
+            </li>
+          {/each}
+        </ul>
+      </nav>
+
+      <div>
+        <button
+          class="px-6 py-2 text-white bg-yellow-400 hover:bg-yellow-600 rounded-3xl transition-colors duration-700 ease-out"
+          >Order Online</button
+        >
+      </div>
+    </header>
+
+    <div class="w-full h-full flex flex-col justify-center">
+      <div>
+        <h2 class="text-5xl font-brand text-white">Fast Food Restaurant</h2>
+
+        <p class="w-1/2 text-sm leading-7 text-white py-3">
+          Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente
+          ad mollitia laborum quam quisquam esse error unde. Tempora ex
+          doloremque, labore, sunt repellat dolore, iste magni quos nihil
+          ducimus libero ipsam.
+        </p>
+
+        <button
+          class="px-6 py-2 text-white bg-yellow-400 hover:bg-yellow-600 rounded-3xl transition-colors duration-700 ease-out"
+          >Order Now</button
+        >
+      </div>
+    </div>
+  </div>
+</div>
