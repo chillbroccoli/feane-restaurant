@@ -1,4 +1,7 @@
 <script>
+  import FaUser from "svelte-icons/fa/FaUser.svelte";
+  import FaShoppingCart from "svelte-icons/fa/FaShoppingCart.svelte";
+  import FaSearch from "svelte-icons/fa/FaSearch.svelte";
   import clsx from "clsx";
   import { page } from "$app/stores";
 
@@ -46,7 +49,18 @@
         </ul>
       </nav>
 
-      <div>
+      <div class="flex items-center">
+        <div class="flex items-center">
+          <button class="w-4 h-4 mr-3 text-white">
+            <FaUser />
+          </button>
+          <button class="w-4 h-4 mr-3 text-white">
+            <FaShoppingCart />
+          </button>
+          <button class="w-4 h-4 mr-6 text-white">
+            <FaSearch />
+          </button>
+        </div>
         <button
           class="px-6 py-2 text-white bg-yellow-400 hover:bg-yellow-600 rounded-3xl transition-colors duration-700 ease-out"
           >Order Online</button
