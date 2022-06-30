@@ -2,7 +2,11 @@
   <div class="w-4/5 2xl:w-3/5 h-full mx-auto">
     <div class="grid grid-cols-2 h-full">
       <div class="h-full flex flex-col justify-center">
-        <img src="/images/about-img.png" alt="About Section Burger" />
+        <img
+          src="/images/about-img.png"
+          alt="About Section Burger"
+          class="w-full h-3/5"
+        />
       </div>
 
       <div class="h-full flex flex-col justify-center ml-12">
