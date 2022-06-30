@@ -1,4 +1,5 @@
 <script lang="ts">
+  import FaShoppingCart from "svelte-icons/fa/FaShoppingCart.svelte";
   import clsx from "clsx";
 
   export let title: string;
@@ -30,8 +31,16 @@
 
     <p class="text-white mt-2 text-sm leading-7">{text}</p>
 
-    <div class="text-white mt-2">
+    <div class="flex items-center justify-between text-white mt-2">
       <span>${price}</span>
+
+      <div
+        class="flex items-center justify-center p-2 bg-yellow-400 hover:bg-yellow-600 rounded-full"
+      >
+        <button class="w-4 h-4 text-white flex items-center justify-center">
+          <FaShoppingCart />
+        </button>
+      </div>
     </div>
   </div>
 </div>
