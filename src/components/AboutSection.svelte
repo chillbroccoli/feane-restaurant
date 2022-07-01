@@ -1,6 +1,6 @@
-<div class="w-full h-[750px] bg-slate-800">
-  <div class="w-4/5 2xl:w-3/5 h-full mx-auto">
-    <div class="grid grid-cols-2 h-full">
+<div class="w-full h-[900px] bg-slate-800">
+  <div class="w-5/6 md:w-4/5 2xl:w-3/5 h-full mx-auto">
+    <div class="flex flex-col-reverse md:grid md:grid-cols-2 h-full">
       <div class="h-full flex flex-col justify-center">
         <img
           src="/images/about-img.png"
@@ -9,7 +9,7 @@
         />
       </div>
 
-      <div class="h-full flex flex-col justify-center ml-12">
+      <div class="h-full flex flex-col justify-center md:ml-12">
         <div>
           <h2 class="text-5xl text-bold font-brand text-white">We Are Feane</h2>
           <p class="text-white mt-4">
