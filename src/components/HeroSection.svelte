@@ -2,6 +2,7 @@
   import FaUser from "svelte-icons/fa/FaUser.svelte";
   import FaShoppingCart from "svelte-icons/fa/FaShoppingCart.svelte";
   import FaSearch from "svelte-icons/fa/FaSearch.svelte";
+  import FaHamburger from "svelte-icons/fa/FaHamburger.svelte";
   import clsx from "clsx";
   import { page } from "$app/stores";
 
@@ -34,7 +35,7 @@
     <header class="flex justify-between items-center py-8">
       <h1 class="text-4xl font-brand text-white">Feane</h1>
 
-      <nav>
+      <nav class="hidden lg:block">
         <ul class="flex items-center">
           {#each links as link}
             <li
@@ -49,7 +50,7 @@
         </ul>
       </nav>
 
-      <div class="flex items-center">
+      <div class="items-center hidden lg:flex">
         <div class="flex items-center">
           <button class="w-4 h-4 mr-3 text-white">
             <FaUser />
@@ -65,6 +66,12 @@
           class="px-6 py-2 text-white bg-yellow-400 hover:bg-yellow-600 rounded-3xl transition-colors duration-700 ease-out"
           >Order Online</button
         >
+      </div>
+
+      <div class="items-center lg:hidden flex">
+        <button class="w-6 h-6 mr-3 text-white">
+          <FaHamburger />
+        </button>
       </div>
     </header>
 
