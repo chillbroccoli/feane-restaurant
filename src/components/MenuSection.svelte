@@ -141,7 +141,9 @@
 
 <div class="w-full min-h-screen bg-gray-100">
   <div class="w-4/5 2xl:w-3/5 h-full mx-auto flex flex-col">
-    <section class="grid grid-cols-2 gap-x-6 pt-20">
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 gap-x-6 pt-20 gap-y-6 md:gap-y-0"
+    >
       <DiscountCard
         title="Tasty Thursdays"
         percentage="20% Off"
