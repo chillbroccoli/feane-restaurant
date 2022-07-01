@@ -1,8 +1,8 @@
 <div class="w-full">
-  <div class="w-4/5 2xl:w-3/5 h-full mx-auto py-20">
+  <div class="w-5/6 md:w-4/5 2xl:w-3/5 h-full mx-auto py-20">
     <h2 class="text-4xl font-brand mb-6">Book A Table</h2>
 
-    <div class="grid grid-cols-2 gap-x-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 md:gap-y-0">
       <form class="flex flex-col">
         <div>
           <input
