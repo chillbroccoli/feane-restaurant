@@ -30,7 +30,7 @@
   ];
 </script>
 
-<div class="w-full h-screen bg-hero">
+<div class="w-full h-screen bg-hero bg-no-repeat bg-center">
   <div class="w-4/5 2xl:w-3/5 h-full mx-auto flex flex-col">
     <header class="flex justify-between items-center py-8">
       <h1 class="text-4xl font-brand text-white">Feane</h1>
