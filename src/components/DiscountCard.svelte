@@ -12,7 +12,7 @@
 <div
   on:mouseenter={() => (isHovered = true)}
   on:mouseleave={() => (isHovered = false)}
-  class="flex bg-slate-800 px-6 py-4 rounded-md"
+  class="flex lg:flex-row flex-col items-center lg:items-start justify-center lg:justify-start bg-slate-800 px-6 py-4 rounded-md"
 >
   <div
     class="h-36 w-36 overflow-hidden relative rounded-full border-4 border-yellow-400"
@@ -28,8 +28,10 @@
   </div>
 
   <div class="flex flex-col ml-4">
-    <h4 class="text-2xl font-brand text-white">{title}</h4>
-    <h3 class="text-3xl font-brand text-white mt-2">{percentage}</h3>
+    <h4 class="text-2xl font-brand text-white text-center">{title}</h4>
+    <h3 class="text-3xl font-brand text-white text-center mt-2">
+      {percentage}
+    </h3>
     <button
       class="flex items-center px-6 py-2 mt-4 text-white bg-yellow-400 hover:bg-yellow-600 rounded-3xl transition-colors duration-700 ease-out"
       >Order Now
