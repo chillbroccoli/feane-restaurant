@@ -14,7 +14,9 @@
     <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-8 md:gap-y-0">
       <div>
         <h3 class="text-white text-4xl font-brand text-center">Contact Us</h3>
-        <ul class="text-white mt-4">
+        <ul
+          class="flex flex-col justify-center items-center md:justify-start md:items-start text-white mt-4"
+        >
           <li class="flex items-center">
             <span class="h-4 w-4 mr-3"><FaMapMarkerAlt /></span>
             <span>Location</span>
