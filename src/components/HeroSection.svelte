@@ -113,7 +113,7 @@
       <div>
         <h2 class="text-5xl font-brand text-white">Fast Food Restaurant</h2>
 
-        <p class="w-1/2 text-sm leading-7 text-white py-3">
+        <p class="w-3/4 md:w-1/2 text-sm leading-7 text-white py-3">
           Doloremque, itaque aperiam facilis rerum, commodi, temporibus sapiente
           ad mollitia laborum quam quisquam esse error unde. Tempora ex
           doloremque, labore, sunt repellat dolore, iste magni quos nihil
