@@ -65,10 +65,12 @@
     </div>
 
     <div class="flex flex-col items-center justify-center mt-8">
-      <p class="text-white">
+      <p class="text-white text-center md:text-start">
         © 2022 All Rights Reserved By Free Html Templates
       </p>
-      <p class="text-white mt-4">© Distributed By ThemeWagon</p>
+      <p class="text-white mt-4 text-center md:text-start">
+        © Distributed By ThemeWagon
+      </p>
     </div>
   </div>
 </div>
